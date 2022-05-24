@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h4{
+    position: relative;
+    width: 2px;
+    background: white;
+    height: 15rem;
+    bottom: 50rem;
+    left: 35rem;
+    opacity: 0.7;
+}
+
+.logo{
+    position: relative;
+    bottom: 36rem;
+    color: white;
+    margin-left: 7rem;
+    font-size: 3rem;
+}
+
+.logo1{
+    width: 38rem;
+    height: 30rem;
+    margin-top: 2rem;
+    margin-left: -8rem;
+}
+
+.learnmore{
+    position: relative;
+    bottom: 35rem;
+    color: white;
+    margin-left: 7rem;
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    background: none;
+    border-style: solid;
+    transition: 0.5s;
+}
+
+.learnmore:hover{
+    background: rgb(76, 120, 252);
+    transition: 0.5s;
+}
+
+
+.buy{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: none;
+    border: 3px solid white;
+    margin-top: 1rem;
+    background: #E06467;
+    color: white;
+}
+
+.buy:hover{
+    border: 3px #E06467 solid;
+    background: white;
+    color: black;
+    transition: 0.2s;
+}
+
+#placeholder{
+    position: relative;
+    padding-left: 1rem;
+}
+
+.header{
+    background: white;
+    display: flex;
+    height: 7.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+
+
+input{
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 14rem;
+    height: 1.8rem;
+    position: relative;
+    left: 15rem;
+    font-size: 1rem;
+}
+
+input:focus{
+    border: 2px solid rgb(76, 120, 252);
+    outline: none;
+}
+
+.headerTitle{
+    color: black;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+
+.headerButton{
+    text-transform: uppercase;
+    background: transparent;
+    color: rgb(76, 120, 252);
+    border: none;
+    font-size: 300%;
+    letter-spacing: 2px;
+}
+
+.headerButton:hover{
+    cursor: pointer;
+}
+
+.mainNavigation{
+    position: absolute;
+    top: 3;
+    left: 0;
+    bottom: 5;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    /*extra for animation*/
+    opacity: 0;
+    transition: 0.2s all;
+}
+
+.mainNavigationList{
+    list-style: none;
+}
+
+
+.mainNavigationListItem{
+    color: white;
+    font-size: 350%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.mainNavigationListItem > a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainNavigationListItem > a:hover{
+    border-bottom: 7px rgb(76, 120, 252) solid;
+    color: rgb(76, 120, 252);
+    transition: 0.2s;
+}
+
+.bigFigure{
+    width: 100%;
+    height: 110vh;
+}
+
+.bigFigure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2),
+    inset 0 -1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.item{
+    position: relative;
+    top: -6rem;
+    left: 1rem;
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.desc{
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+    color: white;
+}
+
+.item:hover{
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+
+.collections{
+    width: 100%;
+    padding: 2.5rem;
+}
+
+.collectionsTitle, .infoTitle{
+    font-size: 350%;
+    color: rgb(76, 120, 252);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 3.125rem;
+}
+
+.collectionsList{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+
+.collectionsListItem{
+    width: 40rem;
+    height: 30rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.collectionsListItem > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+
+.info{
+    padding: 2.5rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 25rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.info p {
+    font-size: 25px;
+}
+
+.footer{
+    height: 7.5rem;
+    background: rgb(76, 120, 252);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.footerNavigation{
+    list-style: none;
+    margin-top: 20rem;
+}
+
+.footerNavigationItem{
+    font-size: 80%;
+    font-style: italic;
+}
+
+
+.footer > address{
+    font-size: 80%;
+    margin-top: 20rem;
+}
+
+.footerNavigationItem > a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media  screen and (max-width:43.75rem) {
+    body{
+        font-size: 0.875rem;
+    }
+    .headerTitle{
+        font-size: 380%;
+    }
+
+    .reviews{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .review{
+        width: 100%;
+    }
+}
+
+
+.section{
+    background: black;
+    height: 20rem; /* placeholder */
+}
+
+.section--first{
+    background: black;
+}
+
+.section--second{
+    background: darkblue;
+}
+
+.section--third{
+    background: white;
+    display: flex;
+    height: auto;
+    padding: 4rem;
+    align-items: center;
+}
+
+.arrow{
+    width: 10%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    width: 100%;
+}
+
+.review{
+    width: 100%;
+    min-height: 20rem;
+    list-style: none;
+    padding: 4rem;
+    background: white;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2),
+    inset 0 -1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    border-radius: 1rem;
+}
+
+
+
+.quote{
+    font-size: 500%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    line-height: 0.5;
+}
+
+
+.review p{
+    font-size: 100%;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem solid white;
+    color: rgb(76, 120, 252);
+}
+
+
+.review:hover{
+    border-bottom: 1rem solid rgb(76, 120, 252);
+    width: 200rem;
+    transition: 0.3s;
+}
+
+
+
